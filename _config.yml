@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "ko"
-title                    : "Gyungah Cho"
+title                    : "Ma crazy blog"
 title_separator          : "-"
 name                     : ""
-description              : "An amazing website."
+description              : "Cho's dream"
 url                      : "https://choah110.github.io" 
 baseurl                  : "" 
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
