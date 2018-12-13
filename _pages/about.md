@@ -19,10 +19,10 @@ author_profile: true
 
 | Name                                        | Description                                           |
 | ------------------------------------------- | ----------------------------------------------------- |
-| [Dankook University] | Bachelor of Statistics (2019) |
-| [Dankook University] | Bachelor of Business Administration (2019) |
-| [Stockholm University] | Exchange student - Bachelor of Statistics (2018) |
-| [Asian Pacific Youth Exchange] | UNDP Youth Internship (2017) |
+| Dankook University | Bachelor of Statistics (2019) |
+| Dankook University | Bachelor of Business Administration (2019) |
+| Stockholm University | Exchange student - Bachelor of Statistics (2018) |
+| Asian Pacific Youth Exchange | UNDP Youth Internship (2017) |
 
 
 ---
@@ -31,7 +31,7 @@ author_profile: true
 
 ### SNS:
 
-- [Facebook](https://www.facebook.com/choah110) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
+- [Facebook](https://www.facebook.com/choah110)
 - [Instagram](https://www.instagram.com/gyungah_cho/?hl=en)
 
 
