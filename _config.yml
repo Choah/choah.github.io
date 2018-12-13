@@ -20,9 +20,9 @@ title                    : "Ma crazy blog"
 title_separator          : "-"
 name                     : ""
 description              : "Cho's dream"
-url                      : "https://choah110.github.io" 
+url                      : "https://choah.github.io" 
 baseurl                  : "" 
-repository               : "choah110/choah110.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "choah/choah.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 head_scripts:
   - https://code.jquery.com/jquery-3.2.1.min.js
   - /assets/js/your-custom-head-script.js
