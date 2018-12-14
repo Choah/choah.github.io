@@ -1,9 +1,15 @@
 ---
-title: "Welcome to Jekyll!"
+title: "깃알못인 내가 쓰는 깃허브 블로그 만들기!"
 date: 2018-12-12 10:28:28 -0400
-categories: jekyll update
+categories: github blog
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+이 블로그 만드느라 한참 헤맸다. 깃허브 알지도 못하는 내가 이 블로그를 만들다니.. 감격.. 
+내 멋대로 나와 비슷한 사람들을 위해서 깃허브 블로그 만들기 한번 적어보겠다.
+
+https://mmistakes.github.io/minimal-mistakes/ 
+이 사이트가 내가 이용할 테마이다. 참고하시길. 
+
+1. 우선 New repository를 만들어야한다. 
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
