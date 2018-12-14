@@ -12,5 +12,7 @@ main:
      url: /tags/
    - title: "Category"
      url: /categories/
+   - title: "External Link"
+     url: https://google.com
   # - title: "Sitemap"
   #   url: /sitemap/
