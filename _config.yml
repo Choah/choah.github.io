@@ -100,7 +100,10 @@ analytics:
     tracking_id          : "UA-130973076-1"
     anonymize_ip         : # true, false (default)
 
-
+header:
+  image: /assets/images/unsplash-image-1.jpg
+  
+  
 # Site Author
 author:
   name             : "Gyungah Cho"
