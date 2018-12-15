@@ -1,11 +1,4 @@
 ---
-title: "깃알못인 내가 쓰는 깃허브 블로그 만들기!"
-date: 2018-12-12 10:28:28 -0400
-categories: github blog
----
-
-https://mmistakes.github.io/minimal-mistakes/ 
-
 excerpt: "This post should [...]"
 header:
   overlay_image: /assets/images/dog.jpg
@@ -14,6 +7,13 @@ header:
   actions:
     - label: "Download"
       url: "https://github.com"
+title: "깃알못인 내가 쓰는 깃허브 블로그 만들기!"
+date: 2018-12-12 10:28:28 -0400
+categories: github blog
+---
+
+https://mmistakes.github.io/minimal-mistakes/ 
+
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
