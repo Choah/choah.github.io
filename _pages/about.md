@@ -25,8 +25,6 @@ feature_row:
     title: "Placeholder 2"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
     url: "https://choah.github.io/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
   - image_path: /assets/images/hamburger.jpg
     title: "Placeholder 3"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
@@ -36,24 +34,17 @@ feature_row2:
     title: "Placeholder Image Left Aligned"
     excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
     url: "https://choah.github.io/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
 feature_row3:
   - image_path: /assets/images/cats.jpg
     alt: "placeholder image 2"
     title: "Placeholder Image Right Aligned"
     excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
 feature_row4:
   - image_path: /assets/images/cats.jpg
     alt: "placeholder image 2"
     title: "Placeholder Image Center Aligned"
     excerpt: 'This is some sample content that goes here with **Markdown** formatting. Centered with `type="center"`'
     url: "https://choah.github.io/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
 author_profile: true
 ---
 
