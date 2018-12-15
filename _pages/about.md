@@ -8,8 +8,8 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/images/unsplash-image-1.jpg
   actions:
-    - label: "E-mail"
-      url: "hellen110@naver.com"
+    - label: "Facebook"
+      url: "https://www.facebook.com/choah110"
   caption: "Photo credit: [**Choah**]"
 excerpt: "Happy Happy Day."
 author_profile: true
