@@ -11,7 +11,7 @@ header:
     - label: "Facebook"
       url: "https://www.facebook.com/choah110"
   caption: "Photo credit: [**Choah**]"
-excerpt: "Happy Happy Day."
+excerpt: "Cho's life."
 author_profile: true
 ---
 
