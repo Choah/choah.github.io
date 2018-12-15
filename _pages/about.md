@@ -12,8 +12,6 @@ header:
       url: "https://choah.github.io/about/"
   caption: "Photo credit: [**Choah**]"
 excerpt: "Happy Happy Day."
-intro: 
-  - excerpt: 'Welcome to Cho's gallery. Centered with `type="center"`'
 author_profile: true
 ---
 
