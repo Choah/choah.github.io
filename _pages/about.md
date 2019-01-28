@@ -29,8 +29,8 @@ author_profile: true
 
 | Name                                        | Description                                           |
 | ------------------------------------------- | ----------------------------------------------------- |
-| Dankook University | Bachelor of Statistics (2019) |
-| Dankook University | Bachelor of Business Administration (2019) |
+| Dankook University | Bachelor of Statistics (2019) 
+Bachelor of Business Administration (2019) |
 | Stockholm University | Exchange student - Bachelor of Statistics (2018) |
 | Asian Pacific Youth Exchange | UNDP Youth Internship (2017) |
 
