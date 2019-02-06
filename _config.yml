@@ -277,6 +277,13 @@ compress_html:
     envs: development
 
 
+#collections
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+
 # Defaults
 defaults:
   # _posts
@@ -300,8 +307,4 @@ defaults:
       share: true
      
 
-#collections
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
+
