@@ -288,7 +288,7 @@ collections:
 defaults:
   # _posts
   - scope:
-      path: "_pages"
+      path: ""
       type: posts
     values:
       layout: single
