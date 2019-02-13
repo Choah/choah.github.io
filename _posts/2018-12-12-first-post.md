@@ -11,74 +11,25 @@ title: "초보자를 위한 판다스 (10 Minutes to Pandas!)"
 date: 2019-02-07 10:28:28 -0400
 categories: python pandas jupyter
 ---
-{
- "cells": [
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "# 10 Minutes to pandas \n",
-    "## 초보자를 위한 Pandas 소개 \n",
-    "\n",
-    "*자세한 내용은'cookbook'참조 [https://pandas.pydata.org/pandas-docs/stable/user_guide/cookbook.html#cookbook]\n",
-    "\n",
-    "*pandas 0.24.1 documentation"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
+
     "### 1. 라이브러리"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 2,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "import numpy as np\n",
-    "import pandas as pd"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
+ ```python
+import numpy as np\n
+import pandas as pd
+```
+  
     "#### * 최종 결과뿐만 아니라 Output 출력을 표시하기"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 3,
-   "metadata": {},
-   "outputs": [],
-   "source": [
+```python
     "from IPython.core.interactiveshell import InteractiveShell\n",
     "InteractiveShell.ast_node_interactivity = \"all\""
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
+```
+  
+  
     "### 2. 객체 생성"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
+
     "#### 값 리스트를 전달하여 pandas가 기본 정수 인덱스를 생성하도록 Series 만들기 "
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 4,
-   "metadata": {},
-   "outputs": [
-    {
+
+```python
      "data": {
       "text/plain": [
        "0    1.0\n",
@@ -87,119 +38,16 @@ categories: python pandas jupyter
        "3    NaN\n",
        "4    6.0\n",
        "5    8.0\n",
-       "dtype: float64"
-      ]
-     },
-     "execution_count": 4,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
+   
     "s = pd.Series([1,3,5, np.nan, 6,8])\n",
-    "\n",
-    "s"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
+```
+
     "#### datetime 인덱스와 레이블된 열이 있는 NumPy배열을 전달하여 DataFrame 만들기"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 5,
-   "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
+  ```python
        "DatetimeIndex(['2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04',\n",
        "               '2013-01-05', '2013-01-06'],\n",
        "              dtype='datetime64[ns]', freq='D')"
-      ]
-     },
-     "execution_count": 5,
-     "metadata": {},
-     "output_type": "execute_result"
-    },
-    {
-     "data": {
-      "text/html": [
-       "<div>\n",
-       "<style scoped>\n",
-       "    .dataframe tbody tr th:only-of-type {\n",
-       "        vertical-align: middle;\n",
-       "    }\n",
-       "\n",
-       "    .dataframe tbody tr th {\n",
-       "        vertical-align: top;\n",
-       "    }\n",
-       "\n",
-       "    .dataframe thead th {\n",
-       "        text-align: right;\n",
-       "    }\n",
-       "</style>\n",
-       "<table border=\"1\" class=\"dataframe\">\n",
-       "  <thead>\n",
-       "    <tr style=\"text-align: right;\">\n",
-       "      <th></th>\n",
-       "      <th>A</th>\n",
-       "      <th>B</th>\n",
-       "      <th>C</th>\n",
-       "      <th>D</th>\n",
-       "    </tr>\n",
-       "  </thead>\n",
-       "  <tbody>\n",
-       "    <tr>\n",
-       "      <th>2013-01-01</th>\n",
-       "      <td>-1.313690</td>\n",
-       "      <td>0.374085</td>\n",
-       "      <td>0.143973</td>\n",
-       "      <td>-0.624099</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2013-01-02</th>\n",
-       "      <td>-0.659125</td>\n",
-       "      <td>-0.595977</td>\n",
-       "      <td>0.403210</td>\n",
-       "      <td>0.814707</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2013-01-03</th>\n",
-       "      <td>0.105771</td>\n",
-       "      <td>0.338891</td>\n",
-       "      <td>-0.404629</td>\n",
-       "      <td>0.032208</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2013-01-04</th>\n",
-       "      <td>0.376774</td>\n",
-       "      <td>-0.035958</td>\n",
-       "      <td>-0.659694</td>\n",
-       "      <td>0.261746</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2013-01-05</th>\n",
-       "      <td>0.317915</td>\n",
-       "      <td>1.052522</td>\n",
-       "      <td>-0.794585</td>\n",
-       "      <td>1.480261</td>\n",
-       "    </tr>\n",
-       "    <tr>\n",
-       "      <th>2013-01-06</th>\n",
-       "      <td>0.579203</td>\n",
-       "      <td>1.709605</td>\n",
-       "      <td>-0.546063</td>\n",
-       "      <td>0.336379</td>\n",
-       "    </tr>\n",
-       "  </tbody>\n",
-       "</table>\n",
-       "</div>"
-      ],
-      "text/plain": [
+  
        "                   A         B         C         D\n",
        "2013-01-01 -1.313690  0.374085  0.143973 -0.624099\n",
        "2013-01-02 -0.659125 -0.595977  0.403210  0.814707\n",
@@ -207,14 +55,8 @@ categories: python pandas jupyter
        "2013-01-04  0.376774 -0.035958 -0.659694  0.261746\n",
        "2013-01-05  0.317915  1.052522 -0.794585  1.480261\n",
        "2013-01-06  0.579203  1.709605 -0.546063  0.336379"
-      ]
-     },
-     "execution_count": 5,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
+   ```
+    
     "dates=pd.date_range('20130101',periods=6)\n",
     "\n",
     "dates\n",
