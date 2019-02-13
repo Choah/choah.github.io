@@ -300,7 +300,7 @@ defaults:
  # _portfolio
   - scope:
       path: ""
-      type: collections
+      type: portfolio
     values:
       layout: single
       author_profile: false
