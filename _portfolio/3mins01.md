@@ -5,12 +5,12 @@ header:
   image: /assets/images/2computers.jpg
   teaser: /assets/images/2computers.jpg
 sidebar:
-  - title: "Role"
+  - title: "3분 딥러닝"
     image: /assets/images/3min.jpg
     image_alt: "logo"
-    text: "Designer, Front-End Developer"
-  - title: "Responsibilities"
-    text: "Reuters try PR stupid commenters should isn't a business model"
+    text: "텐서플로맛"
+  - title: "지은이"
+    text: "골빈해커(김진중)"
 gallery:
   - url: /assets/images/3min.jpg
     image_path: assets/images/3min.jpg
