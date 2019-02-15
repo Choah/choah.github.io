@@ -23,23 +23,49 @@ gallery:
     alt: "placeholder image 3"
 ---
 
-1.1 인공지능, 머신러닝 그리고 딥러닝 
+## 2.1 파이썬 및 필수 라이브러리 설치하기
+
+  - [파이썬 3.6 버전](http://www.python.org/downloads/) (윈도우에서는 반드시 파이썬 3.5 이상, 64비트용을 사용해야 합니다.) 
+  - 텐서플로 1.2 버전 
+
+  파이썬을 잘 설치했다면 텐서플로 설치는 매우 쉽습니다. 리눅스의 터미널 또는 윈도우의 명령 프롬프트에서 pip3 명령어를 사용하면 됩니다. 
+  ```python
+  C:\> pip3 install --upgrade tensorflow
+  ``` 
+  만약 엔비아 GPU를 사용하고 있다면, 엔비디아 사이트에서 CUDA 툴킷을 설치한 뒤 다음의 명렁어로 쉽게 GPU 가속을 지원하는 텐서플로를 설치할 수 있습니다. ([CUDA 툴킷 문서] (http://docs.nvidia.com/cuda)참조).   
+  ```python
+  C:\> pip3 install --upgrade tensorflow-gpu
+  ```
+  그리고 이 책에서 사용하는 라이브러리들을 설치합니다. 
+  ```python
+  C:\> pip3 install numpy matplotlib pillow
+  ```
+  * numpy-수치 계산 라이브러리
+  * matplotlib-그래프 출력 라이브러리
+  * pillow-이미지 처리 라이브러리 
   
-  인공지능: 컴퓨터가 인간의 사고를 모방하는 모든 것
-  머신러닝: 컴퓨터가 스스로 학습하는 것
-  딥러닝: 인간 뇌의 동작 방식에서 착안하여 개발한 학습 방법 (ex. 인공신경망) 
+**Please Note:** 저는 개인적으로 아나콘다를 이용해서 설치합니다. 아니면 주피터노트에서 !pip3 를 이용하여서 설치할 수 있습니다.   
+{: .notice--danger}
 
-  * 인공지능>머신러닝>딥러닝 
+## 2.2 텐서플로 예제 내려받고 실행해보기 
+ 
+ [깃허브 저장소](https://github.com/golbin/TensorFlow-Tutorials)에서 모든 예제를 다운받을 수 있습니다. 
+ ```python
+ C:\> git clone https://github.com/golbin/TensorFlow-Tutorials.git
+ ```
+ 
+## 2.3 주피터 노트북 
 
-'''
-2012년 ILSVRC라는 이미지넷이 제공하는 이미지 인식 대회에서 '인공신경망'을 이용한 알렉스넷이 84.7%라는 놀라운 인식률을 달성. 
-현재는 상당수의 도전자가 97%에 육박하는 인식률을 기록.
-'''
-
-1.2 왜 텐서플로인가? 
-
-  텐서플로는 머신러닝 프로그램, 특히 딥러닝 프로그램을 쉽게 구현할 수 있도록 다양한 기능을 제공해주는 머신러닝 라이브러리로, 모두가 잘 아는 구글에서 만들었습니다. 
-  머신러닝/딥러닝을 위한 라이브러리로 토치, 카페, MXNet, 체이너, CNTK 등 많은 라이브러리가 있습니다. 하지만 그 중 텐서플로를 사용하는 이유는 커뮤니티가 가장 활발하게 작동하기 때문입니다.
-
+  주피터 노트북은 웹브라우저상에서 파이썬 코드를 단계적으로 쉽게 실행하고, 시각적으로 빠르게 확인해볼 수 있도록 도와주는 프로그램입니다. 
+  설치는 일반적인 파이썬 패키지와 같이 pip3를 이용하면 됩니다. 
+  ```python
+  C:\> pip3 install jupyter
+  ```
+  그런 다음 프로젝트를 진행할 폴더의 터미널 또는 명령 프롬프트에서 다음 명령을 실행합니다. (폴더에서 `shift` + 오른쪽 클릭 --> 'PowerSheel 창 열기')
+  ```python
+  C:\> pip3 jupyter notebook
+  ```
+  그러면 웹브라우저가 열리면서 주피터 노트북이 실행될 것입니다. 
+ 
 
 {% include gallery caption="This is a summary of '3minutes Deep learning'." %}
