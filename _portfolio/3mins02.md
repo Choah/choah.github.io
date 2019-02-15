@@ -32,7 +32,7 @@ gallery:
   ```python
   C:\> pip3 install --upgrade tensorflow
   ``` 
-  만약 엔비아 GPU를 사용하고 있다면, 엔비디아 사이트에서 CUDA 툴킷을 설치한 뒤 다음의 명렁어로 쉽게 GPU 가속을 지원하는 텐서플로를 설치할 수 있습니다. ([CUDA 툴킷 문서] (http://docs.nvidia.com/cuda)참조).   
+  만약 엔비아 GPU를 사용하고 있다면, 엔비디아 사이트에서 CUDA 툴킷을 설치한 뒤 다음의 명렁어로 쉽게 GPU 가속을 지원하는 텐서플로를 설치할 수 있습니다. ([CUDA 툴킷 문서](http://docs.nvidia.com/cuda) 참조).   
   ```python
   C:\> pip3 install --upgrade tensorflow-gpu
   ```
