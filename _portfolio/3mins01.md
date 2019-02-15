@@ -31,7 +31,7 @@ gallery:
 
   * 인공지능>머신러닝>딥러닝 
 
-'''
+'''python
 2012년 ILSVRC라는 이미지넷이 제공하는 이미지 인식 대회에서 '인공신경망'을 이용한 알렉스넷이 84.7%라는 놀라운 인식률을 달성. 
 현재는 상당수의 도전자가 97%에 육박하는 인식률을 기록.
 '''
@@ -42,4 +42,4 @@ gallery:
   머신러닝/딥러닝을 위한 라이브러리로 토치, 카페, MXNet, 체이너, CNTK 등 많은 라이브러리가 있습니다. 하지만 그 중 텐서플로를 사용하는 이유는 커뮤니티가 가장 활발하게 작동하기 때문입니다.
 
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
+{% include gallery caption="This is a summary of '3minutes Deep learning'." %}
