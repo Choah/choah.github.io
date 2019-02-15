@@ -5,12 +5,12 @@ header:
   image: /assets/images/2computers.jpg
   teaser: /assets/images/2computers.jpg
 sidebar:
-  - title: "Role"
+  - title: "3분 딥러닝"
     image: /assets/images/3min.jpg
     image_alt: "logo"
-    text: "Designer, Front-End Developer"
-  - title: "Responsibilities"
-    text: "Reuters try PR stupid commenters should isn't a business model"
+    text: "텐서플로맛"
+  - title: "지은이"
+    text: "골빈해커(김진중)"
 gallery:
   - url: /assets/images/3min.jpg
     image_path: assets/images/3min.jpg
@@ -42,4 +42,4 @@ gallery:
   머신러닝/딥러닝을 위한 라이브러리로 토치, 카페, MXNet, 체이너, CNTK 등 많은 라이브러리가 있습니다. 하지만 그 중 텐서플로를 사용하는 이유는 커뮤니티가 가장 활발하게 작동하기 때문입니다.
 
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
+{% include gallery caption="This is a summary of '3minutes Deep learning'." %}
