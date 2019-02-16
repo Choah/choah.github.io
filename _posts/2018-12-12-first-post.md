@@ -33,7 +33,7 @@ InteractiveShell.ast_node_interactivity = "all"
 ```
 
 ## 2. 객체 생성
-값 리스트를 전달하여 pandas가 기본 정수 인덱스를 생성하도록 Series 만들기
+#### 값 리스트를 전달하여 pandas가 기본 정수 인덱스를 생성하도록 Series 만들기
 ```python
 s = pd.Series([1,3,5, np.nan, 6,8])
 s
@@ -48,7 +48,7 @@ Out[4]:
 dtype: float64
 ```
 
-datetime 인덱스와 레이블된 열이 있는 NumPy배열을 전달하여 DataFrame 만들기
+#### datetime 인덱스와 레이블된 열이 있는 NumPy배열을 전달하여 DataFrame 만들기
 ```python
 dates=pd.date_range('20130101',periods=6)
 dates
@@ -69,7 +69,7 @@ A	B	C	D
 2013-01-06	0.579203	1.709605	-0.546063	0.336379
 ```
 
-직렬로 변환 할 수 있는 개체의 지시를 전달하여 DataFrame 만들기
+#### 직렬로 변환 할 수 있는 개체의 지시를 전달하여 DataFrame 만들기
 ```python
 df2=pd.DataFrame({'A':1.,
                  'B':pd.Timestamp('20130102'),
@@ -87,7 +87,7 @@ A	B	C	D	E	F
 3	1.0	2013-01-02	1.0	3	train	foo
 ```
 
-DataFrame의 열은 다른 dtypes를 가진다.
+#### DataFrame의 열은 다른 dtypes를 가진다.
 ```python
 df2.dtypes
 
@@ -104,7 +104,7 @@ dtype: object
 
 ## 3. 데이터 확인하기
 
-프레임의 상단과 하단 부분을 보기
+#### 프레임의 상단과 하단 부분을 보기
 
 ```python
 df.head()
@@ -124,7 +124,7 @@ A	B	C	D
 2013-01-06	0.579203	1.709605	-0.546063	0.336379
 ```
 
-인덱스와 상단 열 표시 (Index, Columns)
+#### 인덱스와 상단 열 표시 (Index, Columns)
 ```python
 df.index
 df.columns
@@ -137,10 +137,10 @@ Out[9]:
 Index(['A', 'B', 'C', 'D'], dtype='object')
 ```
 
-DataFrame.to_numpy()는 기본 데이터의 NumPy표현을 제공합니다. DataFrame에 다른 데이터 유형의 열이 있는 경우 힘든 작업이 될 수 있습니다.
+#### DataFrame.to_numpy()는 기본 데이터의 NumPy표현을 제공합니다. DataFrame에 다른 데이터 유형의 열이 있는 경우 힘든 작업이 될 수 있습니다.
 pandas와 NumPy의 근본적인 차이가 있습니다. Numpy 배열에는 전채 배열에 대한 하나의 dtype이 있는 반면, pandas의 DataFrames에는 각각의 열마다 각각의 dtype이 있습니다.
-DataFrmae.to_numpy()를 불러오면 pandas는 DataFrame의 모든 dtype을 포함 할 수 있는 NumPy dtype을 찾습니다. object가 바로 모든 값을 아우를 수 있는 dtype이 될 수 있습니다.
-모든 부동 소수점 값의 DataFrame인 df 경우 DataFrame.to_numpy()가 빠르며 데이터 복사가 필요하지 않습니다.
+#### DataFrmae.to_numpy()를 불러오면 pandas는 DataFrame의 모든 dtype을 포함 할 수 있는 NumPy dtype을 찾습니다. object가 바로 모든 값을 아우를 수 있는 dtype이 될 수 있습니다.
+#### 모든 부동 소수점 값의 DataFrame인 df 경우 DataFrame.to_numpy()가 빠르며 데이터 복사가 필요하지 않습니다.
 * DataFrame.to_numpy()는 index와 column 레이블을 포함하지 않습니다.
 ```python
 df.to_numpy()
@@ -162,7 +162,7 @@ array([[-1.31368999,  0.37408481,  0.14397347, -0.6240987 ],
        [ 0.57920326,  1.70960542, -0.54606269,  0.33637945]])
 ```       
 
-df2의 DataFrame 은 여러 dtypes을 가지고 있다.
+#### df2의 DataFrame 은 여러 dtypes을 가지고 있다.
 ```python
 df2.to_numpy()
 
@@ -174,7 +174,7 @@ array([[1.0, Timestamp('2013-01-02 00:00:00'), 1.0, 3, 'test', 'foo'],
       dtype=object)
 ```
 
-describe() 는 데이터의 빠른 통계 요약을 보여준다.
+#### describe() 는 데이터의 빠른 통계 요약을 보여준다.
 ```python
 df.describe()
 
@@ -190,7 +190,7 @@ min	-1.313690	-0.595977	-0.794585	-0.624099
 max	0.579203	1.709605	0.403210	1.480261
 ```
 
-열과 행을 바꾸기 원할 때 df.T를 씁니다.
+#### 열과 행을 바꾸기 원할 때 df.T를 씁니다.
 ```python
 df.T
 
@@ -202,7 +202,7 @@ C	0.143973	0.403210	-0.404629	-0.659694	-0.794585	-0.546063
 D	-0.624099	0.814707	0.032208	0.261746	1.480261	0.336379
 ```
 
-축별 정렬
+#### 축별 정렬
 ```python
 df.sort_index(axis=1, ascending=False)
 
@@ -216,7 +216,7 @@ D	C	B	A
 2013-01-06	0.336379	-0.546063	1.709605	0.579203
 ```
 
-값들 정렬
+#### 값들 정렬
 ```python
 df.sort_values(by='B')
 
@@ -237,7 +237,7 @@ A	B	C	D
 
 ### 가져오기
 
-df.A와 동등한 Series을 생성하는 단일 열 선택
+#### df.A와 동등한 Series을 생성하는 단일 열 선택
 ```python
 df['A'] #[열]Column
 
@@ -251,7 +251,7 @@ Out[16]:
 Freq: D, Name: A, dtype: float64
 ```
 
-[ ]을 통해 행을 선택합니다.
+#### [ ]을 통해 행을 선택합니다.
 ```python
 df[0:3] #[행]Row
 df['20130102':'20130104']
@@ -269,7 +269,7 @@ A	B	C	D
 ```
 
 ### 레이블에 따라 선택하기
-레이블에 의하여 값 얻기
+#### 레이블에 의하여 값 얻기
 ```python
 df.loc[dates[0]] #[행]
 
@@ -281,7 +281,7 @@ D   -0.624099
 Name: 2013-01-01 00:00:00, dtype: float64
 ```
 
-레이블 별로 다중 축 선택하기
+#### 레이블 별로 다중 축 선택하기
 ```python
 df.loc[:, ['A','B']] #[행,열]
 
@@ -295,7 +295,7 @@ A	B
 2013-01-06	0.579203	1.709605
 ```
 
-레이블 슬라이싱
+#### 레이블 슬라이싱
 ```python
 df.loc['20130102':'20130104',['A','B']]
 
@@ -314,7 +314,7 @@ B   -0.595977
 Name: 2013-01-02 00:00:00, dtype: float64
 ```
 
-스칼라값 얻기
+#### 스칼라값 얻기
 ```python
 df.loc[dates[0],'A']
 
@@ -331,7 +331,7 @@ Out[23]:
 
 ### 위치에 의한 선택
 
-전달된 정수 위치를 통해 선택
+#### 전달된 정수 위치를 통해 선택
 ```python
 df.iloc[3]
 
@@ -343,7 +343,7 @@ D    0.261746
 Name: 2013-01-04 00:00:00, dtype: float64
 ```
 
-numpy/python과 유사한 interger slices
+#### numpy/python과 유사한 interger slices
 ```python
 df.iloc[3:5, 0:2]   #[행,열]
 
@@ -363,7 +363,7 @@ A	C
 2013-01-05	0.317915	-0.794585
 ```
 
-행을 분할하기
+#### 행을 분할하기
 ```python
 df.iloc[1:3,:]
 
@@ -373,7 +373,7 @@ A	B	C	D
 2013-01-03	0.105771	0.338891	-0.404629	0.032208
 ```
 
-열을 분할하기
+#### 열을 분할하기
 ```python
 df.iloc[:,1:3]
 
@@ -387,7 +387,7 @@ B	C
 2013-01-06	1.709605	-0.546063
 ```
 
-특정한 하나의 값 찾기
+#### 특정한 하나의 값 찾기
 ```python
 df.iloc[1,1]
 
@@ -395,7 +395,7 @@ Out[29]:
 -0.5959772742174114
 ```
 
-더 빠르게 스칼라 찾기 (전 방법과 동등)
+#### 더 빠르게 스칼라 찾기 (전 방법과 동등)
 ```python
 df.iat[1,1]
 
@@ -404,7 +404,7 @@ Out[30]:
 ```
 ### Boolean Indexing
 
-단일 열의 값을 사용하여 데이터를 선택하기
+#### 단일 열의 값을 사용하여 데이터를 선택하기
 ```python
 df[df.A>0]
 
@@ -415,7 +415,7 @@ A	B	C	D
 2013-01-05	0.317915	1.052522	-0.794585	1.480261
 2013-01-06	0.579203	1.709605	-0.546063	0.336379
 ```
-Boolean 조건이 충족되는 DataFrame에서 값을 선택합니다.
+#### Boolean 조건이 충족되는 DataFrame에서 값을 선택합니다.
 ```python
 df[df>0]
 
@@ -429,7 +429,7 @@ A	B	C	D
 2013-01-06	0.579203	1.709605	NaN	0.336379
 ```
 
-필터링 기법인 isin() 방법 사용하기
+#### 필터링 기법인 isin() 방법 사용하기
 ```python
 df2=df.copy()
 df2['E']=['one','one','two','three','four','three']
@@ -451,7 +451,7 @@ A	B	C	D	E
 ```
 
 ### 설정하기
-새 열을 설정하면 데이터를 인덱스별로 자동 정렬합니다.
+#### 새 열을 설정하면 데이터를 인덱스별로 자동 정렬합니다.
 ```python
 s1=pd.Series([1,2,3,4,5,6],index=pd.date_range('20130102',periods=6))
 s1
@@ -467,22 +467,22 @@ Out[34]:
 Freq: D, dtype: int64
 ```
 
-레이블별 값 설정
+#### 레이블별 값 설정
 ```python
 df.at[dates[0],'A']=0
 ```
 
-위치별 값 설정
+#### 위치별 값 설정
 ```python
 df.iat[0,1]=0
 ```
 
-NumPy 배열을 지정하여 설정
+#### NumPy 배열을 지정하여 설정
 ```python
 df.loc[:,'D']=np.array([5]*len(df))
 ```
 
-설정 작업 결과
+#### 설정 작업 결과
 ```python
 df
 
@@ -496,7 +496,7 @@ A	B	C	D	F
 2013-01-06	0.579203	1.709605	-0.546063	5	5.0
 ```
 
-where 작동 설정하기
+#### where 작동 설정하기
 ```python
 df2=df.copy()
 df2[df2>0]=-df2
