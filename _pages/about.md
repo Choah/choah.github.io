@@ -19,13 +19,11 @@ author_profile: true
  
   I tried to keep experiencing the wider world. I was a member of a Dankook international student conference. Also, since I was helping run Hult Prize, the world competition for social entrepreneurs, in my University, I went to Europe to investigate how directors of European universities work on Hult Prize. In 2017 summer vacation, I participated in APYE which is an international internship in Thailand. The more I meet new people and share different ideas, the more realize how important globalization is. Sharing ideas creates synergistic effects. I want to experience the world as much as possible. :smile:
 
----
 
 ## Currently
 
 * Research assistant at Dankook FIRI (Future industry research institute) 
 
----
 
 ## Education
 
@@ -37,7 +35,6 @@ author_profile: true
 
 
 ---
-
 ## Contact
 
 ### SNS:
