@@ -1,5 +1,5 @@
 ---
-excerpt: "[Part.2] 초보자를 위한 판다스!"
+excerpt: "초보자를 위한 판다스!"
 header:
   overlay_image: /assets/images/2computers.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
