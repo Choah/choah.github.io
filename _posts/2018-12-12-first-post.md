@@ -27,6 +27,7 @@ import pandas as pd
 ```
 
 * 최종 결과뿐만 아니라 모든 Output 출력을 표시하기
+
 ```python
 from IPython.core.interactiveshell import InteractiveShell
 InteractiveShell.ast_node_interactivity = "all"
@@ -324,7 +325,7 @@ df.loc[dates[0],'A']
 Out[22]:
 -1.313689989467988
 ```
-스칼라값 빨리 얻기 (이전 방법과 동일)
+#### 스칼라값 빨리 얻기 (이전 방법과 동일)
 ```python
 df.at[dates[0],'A']
 
