@@ -137,10 +137,12 @@ Out[9]:
 Index(['A', 'B', 'C', 'D'], dtype='object')
 ```
 
-#### DataFrame.to_numpy()는 기본 데이터의 NumPy표현을 제공합니다. DataFrame에 다른 데이터 유형의 열이 있는 경우 힘든 작업이 될 수 있습니다.
+DataFrame.to_numpy()는 기본 데이터의 NumPy표현을 제공합니다. DataFrame에 다른 데이터 유형의 열이 있는 경우 힘든 작업이 될 수 있습니다.
 pandas와 NumPy의 근본적인 차이가 있습니다. Numpy 배열에는 전채 배열에 대한 하나의 dtype이 있는 반면, pandas의 DataFrames에는 각각의 열마다 각각의 dtype이 있습니다.
-#### DataFrmae.to_numpy()를 불러오면 pandas는 DataFrame의 모든 dtype을 포함 할 수 있는 NumPy dtype을 찾습니다. object가 바로 모든 값을 아우를 수 있는 dtype이 될 수 있습니다.
-#### 모든 부동 소수점 값의 DataFrame인 df 경우 DataFrame.to_numpy()가 빠르며 데이터 복사가 필요하지 않습니다.
+
+DataFrmae.to_numpy()를 불러오면 pandas는 DataFrame의 모든 dtype을 포함 할 수 있는 NumPy dtype을 찾습니다. object가 바로 모든 값을 아우를 수 있는 dtype이 될 수 있습니다.
+
+모든 부동 소수점 값의 DataFrame인 df 경우 DataFrame.to_numpy()가 빠르며 데이터 복사가 필요하지 않습니다.
 * DataFrame.to_numpy()는 index와 column 레이블을 포함하지 않습니다.
 ```python
 df.to_numpy()
