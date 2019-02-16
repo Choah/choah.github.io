@@ -22,7 +22,7 @@ author_profile: true
 
 ## Currently
 
-* Research assistant at Dankook FIRI(Future industry research institute) 
+* Research assistant at Dankook FIRI (Future industry research institute) 
 
 
 ## Education
