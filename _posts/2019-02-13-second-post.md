@@ -7,7 +7,7 @@ header:
   actions:
     - label: "Reference"
       url: "https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html "
-title: "Part.2 초보자를 위한 판다스 (10 Minutes to Pandas!)"
+title: "[Part.2] 초보자를 위한 판다스 (10 Minutes to Pandas!)"
 date: 2019-02-13 10:28:28 -0400
 categories: python jupyter
 tags: pandas
