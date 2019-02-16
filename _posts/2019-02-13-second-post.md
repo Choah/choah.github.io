@@ -146,6 +146,7 @@ A	B	C	D
 * 몇 가지 기준에 따라 그룹으로 데이터 '분할'
 * 독립적으로 각 그룹에 기능 '적용'
 * 결과를 데이터 구조로 '결합'
+
 ```python
 df=pd.DataFrame({'A':['foo','bar','foo','bar','foo','bar','foo','foo'],
                 'B':['one','one','two','three','two','two','one','three'],
