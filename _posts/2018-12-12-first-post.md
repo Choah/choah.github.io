@@ -146,6 +146,7 @@ DataFrmae.to_numpy()를 불러오면 pandas는 DataFrame의 모든 dtype을 포�
 
 모든 부동 소수점 값의 DataFrame인 df 경우 DataFrame.to_numpy()가 빠르며 데이터 복사가 필요하지 않습니다.
 * DataFrame.to_numpy()는 index와 column 레이블을 포함하지 않습니다.
+
 ```python
 df.to_numpy()
 df.values
