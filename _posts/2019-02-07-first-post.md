@@ -1,5 +1,5 @@
 ---
-excerpt: "초보자를 위한 판다스!"
+excerpt: "(1) Pandas 라이브러리 불러오기, (2) 객체 생성, (3) 데이터 확인하기, (4) 데이터 선택적으로 불러오기, (5) 누락된 데이터 확인하기, (6) 기본적인 통계 작업"
 header:
   overlay_image: /assets/images/2computers.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
