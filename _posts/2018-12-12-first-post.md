@@ -1,5 +1,5 @@
 ---
-excerpt: "초보자를 위한 판다스!"
+excerpt: "Part.1 초보자를 위한 판다스!"
 header:
   overlay_image: /assets/images/2computers.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
@@ -7,7 +7,7 @@ header:
   actions:
     - label: "Reference"
       url: "https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html "
-title: "초보자를 위한 판다스 (10 Minutes to Pandas!)"
+title: "Part.1 초보자를 위한 판다스 (10 Minutes to Pandas!)"
 date: 2019-02-07 10:28:28 -0400
 categories: python jupyter
 tags: pandas
