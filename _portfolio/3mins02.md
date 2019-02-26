@@ -23,7 +23,7 @@ gallery:
     image_path: assets/images/3min.jpg
     alt: "placeholder image 3"
 ---
-
+```
 ## 2.1 파이썬 및 필수 라이브러리 설치하기
 
   - [파이썬 3.6 버전](http://www.python.org/downloads/) (윈도우에서는 반드시 파이썬 3.5 이상, 64비트용을 사용해야 합니다.) 
