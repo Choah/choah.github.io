@@ -1,3 +1,4 @@
+```
 ---
 title: "[3분 딥러닝]Ch.2 텐서플로 설치와 주피터 노트북"
 excerpt: "파이선 및 필수 라이브러리 설치하기"
@@ -69,3 +70,4 @@ gallery:
  
 
 {% include gallery caption="This is a summary of '3minutes Deep learning'." %}
+```
