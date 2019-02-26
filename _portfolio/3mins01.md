@@ -1,3 +1,4 @@
+```
 ---
 title: "[3분 딥러닝]Ch.1 딥러닝과 텐서플로의 만남"
 excerpt: "딥러닝과 덴서플로의 만남!"
@@ -43,3 +44,4 @@ gallery:
 
 
 {% include gallery caption="This is a summary of '3minutes Deep learning'." %}
+```
