@@ -1,0 +1,126 @@
+---
+excerpt: "(1) Image"
+header:
+  overlay_image: /assets/images/2computers.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Photo credit: [**Unsplash**]"
+  actions:
+    - label: "Reference"
+      url: "https://docs.python.org/3/"
+title: "[Python] 파이썬 이미지 분석"
+date: 2019-11-13 00:00:00 -0400
+categories: python Image
+tags: lecture python Image
+gallery1:
+  - url: /assets/images/number.JPG
+    image_path: assets/images/number.JPG
+    alt: "placeholder image"
+gallery2:
+  - url: /assets/images/bono.jpg
+    image_path: assets/images/bono.jpg
+    alt: "placeholder image"    
+---
+
+---
+**본 과정은 제가 파이썬 수업을 들으면서 배운 내용을 복습하는 과정에서 적어본 것입니다.<br> 틀린 부분이 있다면 댓글에 남겨주시면 고치도록 하겠습니다.<br> 확실하지 않은 내용은 '(?)'을 함께 적었으니 그 내용을 아신다면 댓글에 남겨주시면 감사하겠습니다.** 
+{: .notice--warning}
+--- 
+
+# 2019년 11월 12일 
+## Image  
+
+### mnist
+우선 이미지 예시로 mnist를 불러오도록 하겠습니다. minst에는 숫자 데이터가 train,test 데이터로 나누어서 저장되어 있습니다. 
+
+```python
+# mnist는 모듈로 객체이다. dir()해서 안에 __file__이 있다면 이는 모듈이라는 뜻이다. 
+# file명은 소문자로 쓴다.
+from tensorflow.keras.datasets import mnist 
+
+# 데이터를 할당하기 위해서 unpacking 테크닉을 사용한다. 
+(X_train,y_train), (X_test,y_test) = mnist.load_data()
+
+X_train.shape # 채널이 없다. 따라서 reshape 해줘야한다. 
+
+import matplotlib.pyplot as plt
+plt.imshow(X_train[0], cmap = 'gray')
+```
+{% include gallery id="gallery1" caption="number" %}
+
+
+### PIL 
+Keras의 내부적인 영상처리는 PIL를 씁니다. PIL은 Composition 방식입니다. 
+
+```python
+from PIL import Image 
+type(Image)# Image는 모듈이다.
+# module 
+
+# 이미지 불러들이기: 이미지 파일이 현재 jupyter를 작업하고 있는 파일 내에 있어야 한다.
+im = Image.open('bono.jpg')
+im
+```
+{% include gallery id="gallery2" caption="bono" %}
+
+
+
+{% capture notice-2 %}
+## With에 대해 잠깐 알아보도록 하겠습니다. 
+with는 as와 같이 쓰는데, 이때 as 다음 이름을 지정해주면, 그 이름은 사라지지 않고, 파일명으로 메모리상에 남아 있습니다. 
+하지만 실제로 파일을 읽으려고 한다면, 파일이 닫혔다는 에러를 보게됩니다. 자동으로 close 되어서, 연결이 끊긴 것입니다. 
+
+```python
+%%writefile cho.txt
+asdf
+asdfsdf
+asdfsdf
+
+with open('cho.txt') as f:
+    print(f.read()) # 원래는 close를 해줘야하는데 자동으로 __exit__실행되어 close 된다.
+'''
+asdf
+asdfsdf
+asdfsdf
+'''
+f.read()
+# 실행시키면 다음과 같은 value Error가 뜬다. "I/O operation on closed file."
+```
+
+## 파일을 그냥 부르게 되면(open), 닫아줘야한다(close). 
+
+```python
+f = open('cho.txt','w')
+f.write('123')
+# 3
+f.close()
+```
+
+{% endcapture %}
+
+<div class="notice">{{ notice-2 | markdownify }}</div>
+
+
+
+
+{% capture notice-2 %}
+
+{% endcapture %}
+
+<div class="notice">{{ notice-2 | markdownify }}</div>
+
+
+
+- 논문 직접 구현 
+
+{% capture notice-2 %}
+
+{% endcapture %}
+
+<div class="notice">{{ notice-2 | markdownify }}</div>
+
+
+
+
+---
+**무단 배포 금지** 
+{: .notice--danger}
