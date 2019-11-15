@@ -21,7 +21,7 @@ gallery1:
 
 
 ```python
-from PIL import ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont
 calendar = Image.new('RGB',(300,500), color = 'brown') # concpet-modes 
 
 a = Image.open('bono.jpg')
