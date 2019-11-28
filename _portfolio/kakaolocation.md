@@ -1,5 +1,5 @@
 ---
-excerpt: "(1) 위도 경도 찾기"
+excerpt: "위도 경도 찾기"
 header:
   overlay_image: /assets/images/2computers.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
@@ -8,7 +8,7 @@ header:
     - label: "Reference"
       url: "https://docs.python.org/3/"
 title: "[Python] 카카오api 기반 주소로 위도 경도 찾기"
-date: 2019-11-27 00:00:00 -0400
+date: 2019-11-28 00:00:00 -0400
 categories: kakao_api
 tags: kakao_api
 gallery:
