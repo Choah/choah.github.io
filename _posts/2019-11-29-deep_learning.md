@@ -16,8 +16,8 @@ gallery1:
     image_path: assets/images/fashion.JPG
     alt: "placeholder image"
 gallery2:
-  - url: /assets/images/train_test.JPG
-    image_path: assets/images/train_test.JPG
+  - url: /assets/images/fashion25.JPG
+    image_path: assets/images/fashion25.JPG
     alt: "placeholder image"
 gallery3:
   - url: /assets/images/denseroc.JPG
