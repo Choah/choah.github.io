@@ -278,7 +278,7 @@ plt.show()
 #### Model 구조 만들기
 
 {% capture notice-2 %}
-## activation function
+### activation function
 데이터에 따라 쓰는 activation 함수가 다르다. 
 - binary classification: sigmoid
 - multi classification: softmax
