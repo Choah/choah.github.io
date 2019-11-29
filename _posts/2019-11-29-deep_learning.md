@@ -450,7 +450,7 @@ plt.show()
 ### One-Hot encoding 
 
 {% capture notice-2 %}
-- 원핫 인코딩 
+### 원핫 인코딩 
 
 장점: 크기 학습시킬 때 영향이 없다. 
 
