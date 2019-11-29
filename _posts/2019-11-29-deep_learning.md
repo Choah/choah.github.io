@@ -473,6 +473,73 @@ plt.show()
 
 <div class="notice">{{ notice-2 | markdownify }}</div>
 
+- one-hot encoding (sklearn)
+
+```python
+from sklearn.preprocessing import OneHotEncoder
+import sklearn
+sklearn.__version__ # 20 버전 이상에서만 쓸 수 있다. 
+# '0.21.3'
+
+ohe = OneHotEncoder()
+# reshape 해줘야한다. 
+train_labels.reshape(-1,1)
+'''
+array([[9],
+       [0],
+       [0],
+       ...,
+       [3],
+       [0],
+       [5]], dtype=uint8)
+'''
+ohe.fit_transform(train_labels.reshape(-1,1)).toarray()
+'''
+array([[0., 0., 0., ..., 0., 0., 1.],
+       [1., 0., 0., ..., 0., 0., 0.],
+       [1., 0., 0., ..., 0., 0., 0.],
+       ...,
+       [0., 0., 0., ..., 0., 0., 0.],
+       [1., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.]])
+'''
+```
+- one-hot encoding (tensorflow)
+
+```python
+from tensorflow.keras.utils import to_categorical
+test_labels = to_categorical(test_labels)
+train_labels = to_categorical(train_labels)
+```
+
+- 모델링
+
+```python
+model = keras.Sequential()
+model.add(keras.layers.Flatten(input_shape=(28,28)))
+model.add(keras.layers.Dense(128, activation='relu'))
+model.add(keras.layers.Dense(10, activation='softmax'))
+
+model.compile(optimizer='adam',
+             loss='categorical_crossentropy',
+             metrics=['accuracy'])
+# onehot encoding 할 때는 categorical_crossentropy 를 써야한다. 
+
+model.fit(train_im,train_labels, epochs=5)
+'''
+Train on 60000 samples
+Epoch 1/5
+60000/60000 [==============================] - 8s 140us/sample - loss: 0.3463 - accuracy: 0.8741
+Epoch 2/5
+60000/60000 [==============================] - 9s 147us/sample - loss: 0.3199 - accuracy: 0.8826
+Epoch 3/5
+60000/60000 [==============================] - 9s 154us/sample - loss: 0.2993 - accuracy: 0.8895
+Epoch 4/5
+60000/60000 [==============================] - 9s 143us/sample - loss: 0.2859 - accuracy: 0.8923
+Epoch 5/5
+60000/60000 [==============================] - 8s 136us/sample - loss: 0.2718 - accuracy: 0.8983
+'''
+```
 
 ### input_shape
 
