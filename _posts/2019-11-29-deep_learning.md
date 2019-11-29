@@ -36,7 +36,7 @@ gallery4:
 
 # Deep learning  
 
-- unit 개수/ layer가 많을수록 성능은 좋다. 
+- 평균적으로 unit 개수/ layer가 많을수록 성능은 좋습니다. 
 
 ## Tensorflow 
 
@@ -52,7 +52,7 @@ Tensor = Multidimensional Arrays = Data (다차원 배열)
 
 
 {% capture notice-2 %}
-tensor는 assign을 통해서 값을 바꿀 수 있습니다. (tesnfor)상수 개념이 있으면 코딩하기가 더 귀찮지만, 디버깅하기가 좋고 값을 일부러 체크할 필요가 없다. 
+tensor는 assign을 통해서 값을 바꿀 수 있다. (tesnfor)상수 개념이 있으면 코딩하기가 더 귀찮지만, 디버깅하기가 좋고 값을 일부러 체크할 필요가 없다. 
 
 numpy와 같이 mutable은 언제 바뀌는지 모르기 때문에 디버깅하기가 힘들다. 
 
