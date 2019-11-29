@@ -6,7 +6,7 @@ header:
   caption: "Photo credit: [**Unsplash**]"
   actions:
     - label: "Reference"
-      url: "https://docs.python.org/3/"
+      url: "https://www.tensorflow.org/"
 title: "[Tensorflow] Deep learning"
 date: 2019-11-29 00:00:00 -0400
 categories: deep_learning
