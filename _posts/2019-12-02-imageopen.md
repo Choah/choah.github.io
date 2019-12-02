@@ -20,8 +20,8 @@ gallery2:
     image_path: assets/images/flowercls.JPG
     alt: "placeholder image"
 gallery3:
-  - url: /assets/images/flowercls2.JPG
-    image_path: assets/images/flowercls2.JPG
+  - url: /assets/images/flowerscls2.JPG
+    image_path: assets/images/flowerscls2.JPG
     alt: "placeholder image"   
 ---
 
