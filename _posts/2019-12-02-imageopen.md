@@ -7,10 +7,10 @@ header:
   actions:
     - label: "Reference"
       url: "https://docs.python.org/3/"
-title: "[Tensorflow] Image classification"
+title: "[Tensorflow] Image open"
 date: 2019-11-29 00:00:00 -0400
-categories: image classification
-tags: image calssifcation  
+categories: image_open
+tags: image_open  
 gallery1:
   - url: /assets/images/sunflower.JPG
     image_path: assets/images/sunflower.JPG
@@ -29,7 +29,7 @@ gallery3:
 
 # 넘파이
 
-넘파이로 데이터를 열어서 이미지 분류하기 
+넘파이로 데이터를 열어서 이미지  분류하기 
 
 
 - 데이터 로드 
@@ -68,7 +68,7 @@ with np.load(path) as data:
 
 <div class="notice">{{ notice-2 | markdownify }}</div>
 
-- 모델링 
+- Modeling 
 
 ```python
 BATCH_SIZE = 64
@@ -92,9 +92,9 @@ model.fit(train_dataset, epochs=5)
 
 # PIL 
 
-PIL로 열어서 이미지 분류하기 
+PIL로 열어서 이미지 파일로 분류하기 
 
-Keras의 기본 이미지 내부 라이브러리가 PIL입니다.또한 기본적으로 넘파이 포맷입니다. 
+Keras의 기본 이미지 내부 라이브러리가 PIL입니다. 또한 기본적으로 넘파이 포맷입니다. 
 
 - 라이브러리 
 
@@ -119,7 +119,7 @@ image_count
 # 모든 폴더안에 모든 이미지 가져온다는 것. 
 ```
 
-- 분류 이름 지정
+- 이미지 파일 분류
 
 PIL은 한국어도 읽을 수 있고 자동 정렬해줍니다. 
 
@@ -215,7 +215,7 @@ b'C:\\Users\\.keras\\datasets\\flower_photos\\sunflowers\\14741813010_5d44e33088
 '''
 ```
 
-- 분류 이름 지정
+- 이미지 파일 분류
 
 ```python
 def get_label(file_path):
