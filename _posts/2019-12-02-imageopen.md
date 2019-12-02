@@ -6,7 +6,7 @@ header:
   caption: "Photo credit: [**Unsplash**]"
   actions:
     - label: "Reference"
-      url: "https://docs.python.org/3/"
+      url: "https://www.tensorflow.org/tutorials/load_data/images"
 title: "[Tensorflow] Image open"
 date: 2019-12-03 00:00:00 -0400
 categories: image_open
