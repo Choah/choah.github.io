@@ -8,7 +8,7 @@ header:
     - label: "Reference"
       url: "https://docs.python.org/3/"
 title: "[Tensorflow] Image open"
-date: 2019-11-29 00:00:00 -0400
+date: 2019-12-03 00:00:00 -0400
 categories: image_open
 tags: image_open  
 gallery1:
