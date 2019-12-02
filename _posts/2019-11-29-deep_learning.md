@@ -190,7 +190,7 @@ _________________________________________________________________
 - 지표(Metrics)-훈련 단계와 테스트 단계를 모니터링하기 위해 사용합니다. 다음 예에서는 올바르게 분류된 이미지의 비율인 정확도를 사용합니다.
 
  
-
+  
 ```python
 model.compile(optimizer='adam',
              loss='sparse_categorical_crossentropy',
