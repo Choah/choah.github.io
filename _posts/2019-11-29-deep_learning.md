@@ -117,6 +117,60 @@ x_train, x_test = x_train/255.0, x_test / 255.0
 # 0과 1사이에서 찾는게 빠르기 때문에 이걸 하면 더 빠르게 값을 찾을 수 있다. 
 ```
 
+
+
+### from_tensor_slices vs. from_tensors
+
+from_tensor_slices는 클래스 메소드로 한 묶음으로 관리를 합니다. from_tensors보다 
+holdout 하기 편리합니다. 
+따라서 보통 from_tensor_slices를 씁니다. take를 쓰면 랜덤하게 값들을 뽑을 수 있습니다. 
+
+```python
+v = tf.data.Dataset.from_tensor_slices([1,2,3,4])
+v
+# <TensorSliceDataset shapes: (), types: tf.int32>
+
+x= v.take(3)
+# 객체로 되어있기 때문에 눈에 보이지 않는다. (iterable)인 애를 묶음으로 가져왔다. 
+for i in x:
+    print(i)
+'''
+tf.Tensor(1, shape=(), dtype=int32)
+tf.Tensor(2, shape=(), dtype=int32)
+tf.Tensor(3, shape=(), dtype=int32)
+'''
+    
+
+t = tf.data.Dataset.from_tensors([1,2,3])
+t
+# <TensorDataset shapes: (3,), types: tf.int32>
+```
+
+
+### shuffle/batch
+
+- shuffle: 섞는 것 
+- batch: 뽑기
+
+```python
+ds_tensors = a.map(tf.square).shuffle(2).batch(2)
+# 셔플은 섞고 2개 를 뽑는다. 
+ds_tensors = a.map(tf.square).shuffle(2).batch(2)
+print('ds_tensors 요소:')
+for x in ds_tensors:
+    print(x)
+'''
+ds_tensors 요소:
+tf.Tensor([4 9], shape=(2,), dtype=int32)
+tf.Tensor([ 1 16], shape=(2,), dtype=int32)
+tf.Tensor([25 36], shape=(2,), dtype=int32)
+'''
+a.map(lambda x:x+2)
+# <MapDataset shapes: (), types: tf.int32>
+```
+
+
+
 #### Tensorflow Model 
 
 만드는 법 2가지 (Model1, Model2)
