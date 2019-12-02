@@ -295,13 +295,9 @@ image_batch, label_batch = next(iter(train_ds))
 show_batch(image_batch.numpy(), label_batch.numpy())
 ```
 
-
-
 {% include gallery id="gallery3" caption="flowers" %}
 
 
-
-{% include gallery id="gallery" caption="sunflower" %}
 
 {% capture notice-2 %}
 
