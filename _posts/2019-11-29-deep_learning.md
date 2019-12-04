@@ -26,7 +26,11 @@ gallery3:
 gallery4:
   - url: /assets/images/fashion_predict.JPG
     image_path: assets/images/fashion_predict.JPG
-    alt: "placeholder image"       
+    alt: "placeholder image"     
+gallery5:
+  - url: /assets/images/sklearning_curve.JPG
+    image_path: assets/images/sklearning_curve.JPG
+    alt: "placeholder image"   
 ---
 
 ---
@@ -636,6 +640,96 @@ Non-trainable params: 0
 _________________________________________________________________
 '''
 ```
+
+
+### cross_val_score 
+
+tensorflow 또한 cross_val_score에 넣을 수 있습니다. 
+
+
+```python
+from sklearn.datasets import load_iris
+from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense 
+from sklearn.model_selection import cross_val_score
+
+# 데이터 불러오기
+data = load_iris()
+
+def create_model():
+    model = Sequential()
+    model.add(Dense(64, input_shape=(4,), activation='relu'))
+    model.add(Dense(64, activation='relu'))
+    model.add(Dense(4, activation='softmax'))
+    
+    model.compile(loss='sparse_categorical_crossentropy', 
+                 optimizer='adam',metrics=['accuracy'] 
+                 )
+    return model
+
+cross_val_score(KerasClassifier(create_model,epochs=5), data.data, data.target, cv=10)
+'''
+array([1.        , 0.73333335, 1.        , 0.33333334, 0.        ,
+       0.        , 1.        , 0.86666667, 0.        , 0.13333334])
+'''
+```
+
+### Pipeline
+
+```python
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+std = StandardScaler()
+pipe = Pipeline([('scaler', StandardScaler()), ('keras', KerasClassifier(create_model,epochs=5))])
+pipe.fit(data.data, data.target)
+'''
+Train on 150 samples
+Epoch 1/5
+150/150 [==============================] - 1s 3ms/sample - loss: 1.3315 - accuracy: 0.4200
+Epoch 2/5
+150/150 [==============================] - 0s 120us/sample - loss: 1.1513 - accuracy: 0.6667
+Epoch 3/5
+150/150 [==============================] - 0s 93us/sample - loss: 0.9919 - accuracy: 0.7800
+Epoch 4/5
+150/150 [==============================] - 0s 93us/sample - loss: 0.8625 - accuracy: 0.7867
+Epoch 5/5
+150/150 [==============================] - 0s 100us/sample - loss: 0.7558 - accuracy: 0.7933
+Pipeline(memory=None,
+         steps=[('scaler',
+                 StandardScaler(copy=True, with_mean=True, with_std=True)),
+                ('keras',
+                 <tensorflow.python.keras.wrappers.scikit_learn.KerasClassifier object at 0x000001E6B2B3F940>)],
+         verbose=False)
+'''
+```
+
+
+{% capture notice-2 %}
+Tensorflow 는 <br>
+- cross_val_score
+- gridSearchcv
+- pipeline <br>
+등 다 쓸 수 있습니다.
+{% endcapture %}
+
+<div class="notice">{{ notice-2 | markdownify }}</div>
+
+
+### learning curve
+
+```python
+import sklearn_evaluation
+from sklearn.model_selection import learning_curve
+train_size, train_score, test_score = learning_curve(KerasClassifier(create_model,epochs=5), data.data, data.target, cv=5)
+
+sklearn_evaluation.plot.learning_curve(train_score, test_score, train_size)
+```
+
+{% include gallery id="gallery5" caption="Learning Curve" %}
+
+
+
 
 
 
