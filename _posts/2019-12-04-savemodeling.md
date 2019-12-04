@@ -8,7 +8,7 @@ header:
     - label: "Reference"
       url: "https://www.tensorflow.org/tutorials/load_data/images"
 title: "[Tensorflow] 학습한 모델 저장하기"
-date: 2019-12-03 00:00:00 -0400
+date: 2019-12-04 00:00:00 -0400
 categories: tensorflow
 tags: callbacks  
 gallery1:
