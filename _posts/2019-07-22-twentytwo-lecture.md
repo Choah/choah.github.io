@@ -1,4 +1,3 @@
-
 ---
 excerpt: "(1) NumPy (2) Array (3) 차원 (4) 사칙연산 (5) 행렬 (6) 인덱싱 (7) Broadcasting
 (8) Universal function (9) Numpy Quickstart Tutorial"
@@ -8,12 +7,13 @@ header:
   caption: "Photo credit: [**Unsplash**]"
   actions:
     - label: "Reference"
-      url: "https://docs.python.org/ko/3/index.html "
+      url: "https://docs.python.org/ko/3/index.html"
 title: "[Python] NumPy"
 date: 2019-07-22 00:00:00 -0400
-categories: python jupyter 
-tags: lecture Numpy 
+categories: python jupyter
+tags: Numpy
 ---
+
 
 ---
 **본 과정은 제가 파이썬 수업을 들으면서 배운 내용을 복습하는 과정에서 적어본 것입니다.<br> 틀린 부분이 있다면 댓글에 남겨주시면 고치도록 하겠습니다.<br> 확실하지 않은 내용은 '(?)'을 함께 적었으니 그 내용을 아신다면 댓글에 남겨주시면 감사하겠습니다.**
