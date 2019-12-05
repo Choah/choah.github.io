@@ -48,6 +48,7 @@ overfitting 과 underfitting을 보려면 learning curve 그래프를 확인해�
 
 {% capture notice-2 %}
 ### No Free Lunch 
+안타깝지만 어떤 모델의 (층의 개수나 뉴런 개수에 해당하는) 적절한 크기나 구조를 결정하는 마법같은 공식은 없다.
 모델링은 다양한 시도를 통해 최적의 모델링을 찾아야한다. 
 
 딥로닝은 성능이 좋지만, 과적합되기가 쉽다. 
