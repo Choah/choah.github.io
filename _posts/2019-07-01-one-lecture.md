@@ -7,7 +7,7 @@ header:
   actions:
     - label: "Reference"
       url: "https://docs.python.org/ko/3/index.html "
-title: "[Python] Python 고급 강의1"
+title: "[Python] 기초1"
 date: 2019-07-01 00:00:00 -0400
 categories: python jupyter
 tags: lecture CS
