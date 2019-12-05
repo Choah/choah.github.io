@@ -7,7 +7,7 @@ header:
   actions:
     - label: "Reference"
       url: "https://docs.python.org/ko/3/index.html "
-title: "[Python] Python 고급 강의2"
+title: "[Python] 기초2"
 date: 2019-07-02 00:00:00 -0400
 categories: python jupyter
 tags: lecture CS tuple list set dictionary if for declaration parameter argument lambda
