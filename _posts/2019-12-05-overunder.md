@@ -9,7 +9,7 @@ header:
       url: "https://www.tensorflow.org/tutorials/keras/overfit_and_underfit"
 title: "[deep learning] Over/Underfitting"
 date: 2019-12-05 00:00:00 -0400
-categories: deep_learning
+categories: ML
 tags: overfitting underfitting
 gallery1:
   - url: /assets/images/sunflower.JPG
