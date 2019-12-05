@@ -7,7 +7,7 @@ header:
   actions:
     - label: "Reference"
       url: "https://docs.python.org/ko/3/index.html "
-title: "[Python] Python 고급 강의3: 함수형 패러다임 고급 기법"
+title: "[Python] 기초3: 함수형 패러다임 고급 기법"
 date: 2019-07-03 00:00:00 -0400
 categories: python jupyter
 tags: lecture CS functional iterator generator comprehension timeit recursive map filter
