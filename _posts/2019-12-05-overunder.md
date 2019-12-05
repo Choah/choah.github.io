@@ -7,7 +7,7 @@ header:
   actions:
     - label: "Reference"
       url: "https://www.tensorflow.org/tutorials/keras/overfit_and_underfit"
-title: "[deep learning] Over/Underfitting"
+title: "[Machine learning] Over/Underfitting"
 date: 2019-12-05 00:00:00 -0400
 categories: ML
 tags: overfitting underfitting
