@@ -9,7 +9,7 @@ header:
   actions:
     - label: "Reference"
       url: "https://docs.python.org/ko/3/index.html "
-title: "[Python] 파이썬 NumPy"
+title: "[Python] NumPy"
 date: 2019-07-22 00:00:00 -0400
 categories: python jupyter 
 tags: lecture Numpy 
