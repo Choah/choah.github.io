@@ -248,6 +248,7 @@ def process_path(file_path):
     img = decode_img(img)
     return img, label
 
+# AUTOTUNE은 밝기와 명암을 자동 조정하는 것 
 AUTOTUNE = tf.data.experimental.AUTOTUNE
 
 # Set `num_parallel_calls` so multiple images are loaded/processed in parallel.
