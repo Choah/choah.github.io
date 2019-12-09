@@ -48,9 +48,7 @@ cho 2019-12-09
 tensorflow 2.0.0
 tensorboard 2.0.0
 '''
-```
 
-```ptyhon
 # Clear any logs from previous runs
 # 누적이 되므로 지워준다. 
 !rm -rf ./logs/ 
