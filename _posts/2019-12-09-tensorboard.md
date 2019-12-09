@@ -6,7 +6,7 @@ header:
   caption: "Photo credit: [**Unsplash**]"
   actions:
     - label: "Reference"
-      url: "https://docs.python.org/3/"
+      url: "https://www.tensorflow.org/tensorboard"
 title: "[Python] Tensorboard"
 date: 2019-12-09 00:00:00 -0400
 categories: tensorflow
