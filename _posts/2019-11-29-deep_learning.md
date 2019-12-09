@@ -729,7 +729,23 @@ sklearn_evaluation.plot.learning_curve(train_score, test_score, train_size)
 {% include gallery id="gallery5" caption="Learning Curve" %}
 
 
+### Classification report 
 
+```python
+from sklearn.metrics import classification_report
+print(classification_report(y_test, rf.predict(X_test)))
+'''
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        11
+           1       0.95      0.95      0.95        19
+           2       0.88      0.88      0.88         8
+
+    accuracy                           0.95        38
+   macro avg       0.94      0.94      0.94        38
+weighted avg       0.95      0.95      0.95        38
+'''
+```
 
 
 
