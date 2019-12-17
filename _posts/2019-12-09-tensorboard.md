@@ -37,7 +37,7 @@ Tensorboard를 사용하기 위해서는 Tensorflow의 버전이 2.0.0 이상이
 또한 Tensorflow의 버전과 Tensorboard의 버전이 일치해야합니다. 
 
 ```python
-!pip uninstall tensorboard
+!pip install tensorboard
 
 # 버전 확인해보기
 %load_ext watermark
