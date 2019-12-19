@@ -12,20 +12,20 @@ date: 2019-12-19 00:00:00 -0400
 categories: tensorflow
 tags: Autoencoder
 gallery1:
-  - url: /assets/images/filters.JPG
-    image_path: assets/images/filters.JPG
+  - url: /assets/images/mse.JPG
+    image_path: assets/images/mse.JPG
     alt: "placeholder image"
 gallery2:
-  - url: /assets/images/bono_filters.JPG
-    image_path: assets/images/bono_filters.JPG
+  - url: /assets/images/binary_crossentropy.JPG
+    image_path: assets/images/binary_crossentropy.JPG
     alt: "placeholder image"
 gallery3:
-  - url: /assets/images/grace_hopper.JPG
-    image_path: assets/images/grace_hopper.JPG
+  - url: /assets/images/encoder.JPG
+    image_path: assets/images/encoder.JPG
     alt: "placeholder image"   
 gallery4:
-  - url: /assets/images/flower_mobilenet.JPG
-    image_path: assets/images/flower_mobilenet.JPG
+  - url: /assets/images/encoder+decoder.JPG
+    image_path: assets/images/encoder+decoder.JPG
     alt: "placeholder image"    
 gallery5:
   - url: /assets/images/flower_for.JPG
