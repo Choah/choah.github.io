@@ -1,5 +1,5 @@
 ---
-excerpt: "(1) autoencoder"
+excerpt: "(1) autoencoder (2) keras deep autoencoder (3) keras convolutional autoencoder"
 header:
   overlay_image: /assets/images/2computers.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
@@ -8,7 +8,7 @@ header:
     - label: "Reference"
       url: "https://blog.keras.io/building-autoencoders-in-keras.html"
 title: "[Tensorflow] Autoencoder"
-date: 2019-12-10 00:00:00 -0400
+date: 2019-12-19 00:00:00 -0400
 categories: tensorflow
 tags: Autoencoder
 gallery1:
