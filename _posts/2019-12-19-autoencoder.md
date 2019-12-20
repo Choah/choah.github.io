@@ -392,6 +392,8 @@ Epoch 5/5
 
 ### Convolutional autoencoder 
 
+- fully connected 보다 convolution한 autoencoder가 성능이 더 좋다. 
+
 stack 방식
 
 ```python
