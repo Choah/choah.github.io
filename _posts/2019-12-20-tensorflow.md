@@ -43,6 +43,15 @@ gallery6:
 
 Model은 multi inputs, multi outputs이 가능합니다.
 
+{% capture notice-2 %}
+- Model은 다방향으로 가능하다. -> sequence가 안된다. (sequence를 하기 위해서는 합병(merge)하는 방법이 있다.)
+- sequential은 한방향만 가능하다. 
+{% endcapture %}
+
+<div class="notice">{{ notice-2 | markdownify }}</div>
+
+
+
 - add, Average, Concatenate, Dot, Lambda
 
 ```python
