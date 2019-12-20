@@ -1,5 +1,5 @@
 ---
-excerpt: "(1) autoencoder (2) keras deep autoencoder (3) keras convolutional autoencoder"
+excerpt: "(1) autoencoder (2) keras deep autoencoder (3) keras convolutional autoencoder (4) loss 2개"
 header:
   overlay_image: /assets/images/2computers.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
@@ -28,8 +28,8 @@ gallery4:
     image_path: assets/images/encoder+decoder.JPG
     alt: "placeholder image"    
 gallery5:
-  - url: /assets/images/flower_for.JPG
-    image_path: assets/images/flower_for.JPG
+  - url: /assets/images/predicts.JPG
+    image_path: assets/images/predicts.JPG
     alt: "placeholder image"    
 gallery6:
   - url: /assets/images/dog_cat.JPG
@@ -433,6 +433,172 @@ decoded = Conv2D(1, (3,3), activation='sigmoid', padding = 'same')(x)
 autoencoder = Model(input_img, decoded)
 autoencoder.compile(optimizer='adadelta', loss='binary_crossentropy')
 ```
+
+
+## 임의로 output 2개,  loss 2개인 모델 만들기 
+
+- 동료분 코드 참고
+
+```python
+from tensorflow.keras.layers import Input, Dense
+from tensorflow.keras.models import Model
+
+inp = Input(shape=(28,28))
+layer1 = Dense(2, kernel_initializer='ones')(inp)
+layer2 = Dense(2, kernel_initializer='ones')(inp)
+
+layer1_1 = Dense(28)(layer1)
+layer2_1 = Dense(28)(layer2)
+
+test_model = Model(inp, [layer1_1,layer2_1])
+test_model.summary()
+'''
+Model: "model_17"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_15 (InputLayer)           [(None, 28, 28)]     0                                            
+__________________________________________________________________________________________________
+dense_37 (Dense)                (None, 28, 2)        58          input_15[0][0]                   
+__________________________________________________________________________________________________
+dense_38 (Dense)                (None, 28, 2)        58          input_15[0][0]                   
+__________________________________________________________________________________________________
+dense_39 (Dense)                (None, 28, 28)       84          dense_37[0][0]                   
+__________________________________________________________________________________________________
+dense_40 (Dense)                (None, 28, 28)       84          dense_38[0][0]                   
+==================================================================================================
+Total params: 284
+Trainable params: 284
+Non-trainable params: 0
+__________________________________________________________________________________________________
+'''
+```
+
+- outputs 2개 
+
+```python
+test_model.output
+'''
+[<tf.Tensor 'dense_39/Identity:0' shape=(None, 28, 28) dtype=float32>,
+ <tf.Tensor 'dense_40/Identity:0' shape=(None, 28, 28) dtype=float32>]
+'''
+```
+
+- 임의로 만든 loss function
+
+```python
+def custom_loss(x, pred):
+    return (x-pred)**2 
+```
+
+- compile(loss 2개)
+
+```python
+test_model.compile(loss=['binary_crossentropy', custom_loss], optimizer='adam')
+```
+
+- 데이터 만들기
+
+```python
+(x_train, _), (x_test, _) = mnist.load_data()
+
+x_train = x_train.astype('float32')/255.
+x_test = x_test.astype('float32')/255.
+```
+
+- target을 2개 넣는다.
+
+```python
+ht = test_model.fit(x_train, [x_train,x_train], epochs =5, batch_size=10)
+'''
+Train on 60000 samples
+Epoch 1/5
+60000/60000 [==============================] - 13s 210us/sample - loss: 1.2913 - dense_39_loss: 1.1831 - dense_40_loss: 0.1081
+Epoch 2/5
+60000/60000 [==============================] - 12s 203us/sample - loss: 1.0790 - dense_39_loss: 1.0399 - dense_40_loss: 0.0392
+Epoch 3/5
+60000/60000 [==============================] - 12s 206us/sample - loss: 1.0745 - dense_39_loss: 1.0355 - dense_40_loss: 0.0390
+Epoch 4/5
+60000/60000 [==============================] - 11s 187us/sample - loss: 1.0735 - dense_39_loss: 1.0346 - dense_40_loss: 0.0390
+Epoch 5/5
+60000/60000 [==============================] - 11s 185us/sample - loss: 1.0719 - dense_39_loss: 1.0329 - dense_40_loss: 0.0390
+'''
+```
+
+- 기본 loss가 1개 나오고,
+- 지정한 loss가 각각 1개씩 나온다. 
+
+```python
+ht.history
+'''
+{'loss': [1.2912812048494815,
+  1.0790308263997237,
+  1.0744832996030649,
+  1.0735437232951324,
+  1.071898257335027],
+ 'dense_39_loss': [1.1831374, 1.0398649, 1.0354929, 1.034579, 1.0329417],
+ 'dense_40_loss': [0.10814286,
+  0.039164938,
+  0.03898862,
+  0.038964037,
+  0.038956292]}
+'''
+```
+
+
+- loss는 각각 loss에 대한 합인듯) - 근사값
+
+```python
+for lt, l1, l2 in zip(*ht.history.values()):
+    print(f"{lt} (lt) = {l1+l2} (l1+l2)")
+    print(lt == l1+l2)
+'''
+1.2912812048494815 (lt) = 1.2912802696228027 (l1+l2)
+False
+1.0790308263997237 (lt) = 1.0790297985076904 (l1+l2)
+False
+1.0744832996030649 (lt) = 1.07448148727417 (l1+l2)
+False
+1.0735437232951324 (lt) = 1.0735430717468262 (l1+l2)
+False
+1.071898257335027 (lt) = 1.0718979835510254 (l1+l2)
+False
+'''
+```
+
+- predict
+- input 1개에 대해서 output 2개가 나온다.
+
+
+```python
+preds = test_model.predict(x_test[0][np.newaxis])
+preds[0].shape, preds[1].shape
+# ((1, 28, 28), (1, 28, 28))
+```
+
+- 각각 다른 loss function이 적용된 것 같다.
+- loss function만 다르게 하고 구조는 같은데, output 2개가 많이 다르다.
+- 모델을 제대로 만들면 잘 나올 것 같다.
+
+```python
+plt.figure(figsize=(16,4))
+ax1 = plt.subplot(1,3,1)
+ax1.imshow(preds[0].squeeze())
+ax1.set_title('preds[0]')
+
+ax2 = plt.subplot(1,3,2)
+ax2.imshow(preds[1].squeeze())
+ax2.set_title('preds[1]')
+
+ax3 = plt.subplot(1,3,3)
+ax3.imshow(x_test[0])
+ax3.set_title('input')
+
+plt.show()
+```
+
+{% include gallery id="gallery5" caption="predicts" %}
+
 
 
 
