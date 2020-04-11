@@ -18,7 +18,7 @@ tags: lecture CS tuple list set dictionary if for declaration parameter argument
 {: .notice--warning}
 
 ## 1) Tuple 
-- 할당에 투플이 큰 역활을 차지한다.
+- 할당에 투플이 큰 역할을 차지한다.
 
 ```python
 a=(1,2,3,) # 뒤에 , 를 찍어주는게 좋다.
