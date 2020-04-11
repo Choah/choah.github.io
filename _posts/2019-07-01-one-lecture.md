@@ -81,7 +81,7 @@ import antigravity
 
 #### 파이썬에서 지원하는 프로그램
 - 코틀린 자바 안드로이드 앱
-- 웹기반 파이썬: skulpt, brython, PyPy(파이써느올 만든 파이썬)
+- 웹기반 파이썬: skulpt, brython, PyPy(파이썬으로 만든 파이썬)
 - tenserflow: 속도가 느려서 실제 회사에서는 잘 안씀
 
 ## 3) Data Type 13가지 
