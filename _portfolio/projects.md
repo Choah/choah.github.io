@@ -1,9 +1,13 @@
 ---
-title: "데이터 분석 프로젝트"
-excerpt: "프로젝트"
+excerpt: "데이터 분석 프로젝트"
 header:
-  image: /assets/images/2computers.jpg
-  teaser: /assets/images/2computers.jpg
+  overlay_image: /assets/images/2computers.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Photo credit: [**Unsplash**]"
+title: "데이터 분석 프로젝트"
+date: 2020-05-17 00:00:00 -0400
+categories: projects
+tags: projects
 gallery:
   - url: /assets/images/슬라이드1.JPG
     image_path: assets/images/슬라이드1.JPG
