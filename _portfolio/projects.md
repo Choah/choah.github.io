@@ -1,5 +1,5 @@
 ---
-excerpt: "데이터 분석 프로젝트"
+excerpt: "데이터 분석"
 header:
   overlay_image: /assets/images/2computers.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
@@ -98,6 +98,15 @@ gallery:
     alt: "placeholder image 28"      
 ---
 
+## 슬라이드쇼
+
+아래 그림을 클릭하시면 크게 볼 수 있습니다.
+
+{% include gallery caption="데이터 분석 프로젝트" %}
+
+
+
+## 스크롤 
 
  <figure>
   <img src="/assets/images/슬라이드1.JPG">
@@ -130,7 +139,3 @@ gallery:
   <img src="/assets/images/슬라이드28.JPG">    
 </figure>
 
-## 슬라이드쇼
-
-{% include gallery caption="데이터 분석 프로젝트" %}
-```
