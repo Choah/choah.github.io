@@ -1,4 +1,3 @@
-```
 ---
 title: "데이터 분석 프로젝트"
 excerpt: "프로젝트"
@@ -94,7 +93,7 @@ gallery:
     image_path: assets/images/슬라이드28.jpg
     alt: "placeholder image 28"      
 ---
-```
+
 
  <figure>
   <img src="/assets/images/슬라이드1.jpg">
