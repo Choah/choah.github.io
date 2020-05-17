@@ -126,5 +126,7 @@ gallery:
   <img src="/assets/images/슬라이드28.JPG">    
 </figure>
 
+## 슬라이드쇼
+
 {% include gallery caption="데이터 분석 프로젝트" %}
 ```
