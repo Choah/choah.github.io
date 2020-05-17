@@ -5,125 +5,125 @@ header:
   image: /assets/images/2computers.jpg
   teaser: /assets/images/2computers.jpg
 gallery:
-  - url: /assets/images/슬라이드1.jpg
-    image_path: assets/images/슬라이드1.jpg
+  - url: /assets/images/슬라이드1.JPG
+    image_path: assets/images/슬라이드1.JPG
     alt: "placeholder image 1"
-  - url: /assets/images/슬라이드2.jpg
-    image_path: assets/images/슬라이드2.jpg
+  - url: /assets/images/슬라이드2.JPG
+    image_path: assets/images/슬라이드2.JPG
     alt: "placeholder image 2"
-  - url: /assets/images/슬라이드3.jpg
-    image_path: assets/images/슬라이드3.jpg
+  - url: /assets/images/슬라이드3.JPG
+    image_path: assets/images/슬라이드3.JPG
     alt: "placeholder image 3"
-  - url: /assets/images/슬라이드4.jpg
-    image_path: assets/images/슬라이드4.jpg
+  - url: /assets/images/슬라이드4.JPG
+    image_path: assets/images/슬라이드4.JPG
     alt: "placeholder image 4"
-  - url: /assets/images/슬라이드5.jpg
-    image_path: assets/images/슬라이드5.jpg
+  - url: /assets/images/슬라이드5.JPG
+    image_path: assets/images/슬라이드5.JPG
     alt: "placeholder image 5"
-  - url: /assets/images/슬라이드6.jpg
-    image_path: assets/images/슬라이드6.jpg
+  - url: /assets/images/슬라이드6.JPG
+    image_path: assets/images/슬라이드6.JPG
     alt: "placeholder image 6"
-  - url: /assets/images/슬라이드7.jpg
-    image_path: assets/images/슬라이드7.jpg
+  - url: /assets/images/슬라이드7.JPG
+    image_path: assets/images/슬라이드7.JPG
     alt: "placeholder image 7"
-  - url: /assets/images/슬라이드8.jpg
-    image_path: assets/images/슬라이드8.jpg
+  - url: /assets/images/슬라이드8.JPG
+    image_path: assets/images/슬라이드8.JPG
     alt: "placeholder image 8"
-  - url: /assets/images/슬라이드9.jpg
-    image_path: assets/images/슬라이드9.jpg
+  - url: /assets/images/슬라이드9.JPG
+    image_path: assets/images/슬라이드9.JPG
     alt: "placeholder image 9"
-  - url: /assets/images/슬라이드10.jpg
-    image_path: assets/images/슬라이드1.jpg
+  - url: /assets/images/슬라이드10.JPG
+    image_path: assets/images/슬라이드1.JPG
     alt: "placeholder image 10"
-  - url: /assets/images/슬라이드10.jpg
-    image_path: assets/images/슬라이드10.jpg
+  - url: /assets/images/슬라이드10.JPG
+    image_path: assets/images/슬라이드10.JPG
     alt: "placeholder image 10"
-  - url: /assets/images/슬라이드11.jpg
-    image_path: assets/images/슬라이드11.jpg
+  - url: /assets/images/슬라이드11.JPG
+    image_path: assets/images/슬라이드11.JPG
     alt: "placeholder image 11"  
-  - url: /assets/images/슬라이드12.jpg
-    image_path: assets/images/슬라이드12.jpg
+  - url: /assets/images/슬라이드12.JPG
+    image_path: assets/images/슬라이드12.JPG
     alt: "placeholder image 12"
-  - url: /assets/images/슬라이드13.jpg
-    image_path: assets/images/슬라이드13.jpg
+  - url: /assets/images/슬라이드13.JPG
+    image_path: assets/images/슬라이드13.JPG
     alt: "placeholder image 13"
-  - url: /assets/images/슬라이드14.jpg
-    image_path: assets/images/슬라이드14.jpg
+  - url: /assets/images/슬라이드14.JPG
+    image_path: assets/images/슬라이드14.JPG
     alt: "placeholder image 14"
-  - url: /assets/images/슬라이드15.jpg
-    image_path: assets/images/슬라이드15.jpg
+  - url: /assets/images/슬라이드15.JPG
+    image_path: assets/images/슬라이드15.JPG
     alt: "placeholder image 15"
-  - url: /assets/images/슬라이드16.jpg
-    image_path: assets/images/슬라이드16.jpg
+  - url: /assets/images/슬라이드16.JPG
+    image_path: assets/images/슬라이드16.JPG
     alt: "placeholder image 16"
-  - url: /assets/images/슬라이드17.jpg
-    image_path: assets/images/슬라이드17.jpg
+  - url: /assets/images/슬라이드17.JPG
+    image_path: assets/images/슬라이드17.JPG
     alt: "placeholder image 17"
-  - url: /assets/images/슬라이드18.jpg
-    image_path: assets/images/슬라이드18.jpg
+  - url: /assets/images/슬라이드18.JPG
+    image_path: assets/images/슬라이드18.JPG
     alt: "placeholder image 18"
-  - url: /assets/images/슬라이드19.jpg
-    image_path: assets/images/슬라이드19.jpg
+  - url: /assets/images/슬라이드19.JPG
+    image_path: assets/images/슬라이드19.JPG
     alt: "placeholder image 19"
-  - url: /assets/images/슬라이드20.jpg
-    image_path: assets/images/슬라이드20.jpg
+  - url: /assets/images/슬라이드20.JPG
+    image_path: assets/images/슬라이드20.JPG
     alt: "placeholder image 20"   
-  - url: /assets/images/슬라이드21.jpg
-    image_path: assets/images/슬라이드21.jpg
+  - url: /assets/images/슬라이드21.JPG
+    image_path: assets/images/슬라이드21.JPG
     alt: "placeholder image 21"    
-  - url: /assets/images/슬라이드22.jpg
-    image_path: assets/images/슬라이드22.jpg
+  - url: /assets/images/슬라이드22.JPG
+    image_path: assets/images/슬라이드22.JPG
     alt: "placeholder image 22"   
-  - url: /assets/images/슬라이드23.jpg
-    image_path: assets/images/슬라이드23.jpg
+  - url: /assets/images/슬라이드23.JPG
+    image_path: assets/images/슬라이드23.JPG
     alt: "placeholder image 23"         
-  - url: /assets/images/슬라이드24.jpg
-    image_path: assets/images/슬라이드24.jpg
+  - url: /assets/images/슬라이드24.JPG
+    image_path: assets/images/슬라이드24.JPG
     alt: "placeholder image 24"   
-  - url: /assets/images/슬라이드25.jpg
-    image_path: assets/images/슬라이드25.jpg
+  - url: /assets/images/슬라이드25.JPG
+    image_path: assets/images/슬라이드25.JPG
     alt: "placeholder image 25"     
-  - url: /assets/images/슬라이드26.jpg
-    image_path: assets/images/슬라이드26.jpg
+  - url: /assets/images/슬라이드26.JPG
+    image_path: assets/images/슬라이드26.JPG
     alt: "placeholder image 26"   
-  - url: /assets/images/슬라이드27.jpg
-    image_path: assets/images/슬라이드27.jpg
+  - url: /assets/images/슬라이드27.JPG
+    image_path: assets/images/슬라이드27.JPG
     alt: "placeholder image 27"       
-  - url: /assets/images/슬라이드28.jpg
-    image_path: assets/images/슬라이드28.jpg
+  - url: /assets/images/슬라이드28.JPG
+    image_path: assets/images/슬라이드28.JPG
     alt: "placeholder image 28"      
 ---
 
 
  <figure>
-  <img src="/assets/images/슬라이드1.jpg">
-  <img src="/assets/images/슬라이드2.jpg">
-  <img src="/assets/images/슬라이드3.jpg">
-  <img src="/assets/images/슬라이드4.jpg">  
-  <img src="/assets/images/슬라이드5.jpg">
-  <img src="/assets/images/슬라이드6.jpg">  
-  <img src="/assets/images/슬라이드7.jpg">
-  <img src="/assets/images/슬라이드8.jpg">   
-  <img src="/assets/images/슬라이드9.jpg">
-  <img src="/assets/images/슬라이드10.jpg">
-  <img src="/assets/images/슬라이드11.jpg">
-  <img src="/assets/images/슬라이드12.jpg">  
-  <img src="/assets/images/슬라이드13.jpg">
-  <img src="/assets/images/슬라이드14.jpg">  
-  <img src="/assets/images/슬라이드15.jpg">
-  <img src="/assets/images/슬라이드16.jpg">     
-  <img src="/assets/images/슬라이드17.jpg">
-  <img src="/assets/images/슬라이드18.jpg">
-  <img src="/assets/images/슬라이드19.jpg">
-  <img src="/assets/images/슬라이드20.jpg">  
-  <img src="/assets/images/슬라이드21.jpg">
-  <img src="/assets/images/슬라이드22.jpg">  
-  <img src="/assets/images/슬라이드23.jpg">
-  <img src="/assets/images/슬라이드24.jpg">   
-  <img src="/assets/images/슬라이드25.jpg">
-  <img src="/assets/images/슬라이드26.jpg">
-  <img src="/assets/images/슬라이드27.jpg">
-  <img src="/assets/images/슬라이드28.jpg">    
+  <img src="/assets/images/슬라이드1.JPG">
+  <img src="/assets/images/슬라이드2.JPG">
+  <img src="/assets/images/슬라이드3.JPG">
+  <img src="/assets/images/슬라이드4.JPG">  
+  <img src="/assets/images/슬라이드5.JPG">
+  <img src="/assets/images/슬라이드6.JPG">  
+  <img src="/assets/images/슬라이드7.JPG">
+  <img src="/assets/images/슬라이드8.JPG">   
+  <img src="/assets/images/슬라이드9.JPG">
+  <img src="/assets/images/슬라이드10.JPG">
+  <img src="/assets/images/슬라이드11.JPG">
+  <img src="/assets/images/슬라이드12.JPG">  
+  <img src="/assets/images/슬라이드13.JPG">
+  <img src="/assets/images/슬라이드14.JPG">  
+  <img src="/assets/images/슬라이드15.JPG">
+  <img src="/assets/images/슬라이드16.JPG">     
+  <img src="/assets/images/슬라이드17.JPG">
+  <img src="/assets/images/슬라이드18.JPG">
+  <img src="/assets/images/슬라이드19.JPG">
+  <img src="/assets/images/슬라이드20.JPG">  
+  <img src="/assets/images/슬라이드21.JPG">
+  <img src="/assets/images/슬라이드22.JPG">  
+  <img src="/assets/images/슬라이드23.JPG">
+  <img src="/assets/images/슬라이드24.JPG">   
+  <img src="/assets/images/슬라이드25.JPG">
+  <img src="/assets/images/슬라이드26.JPG">
+  <img src="/assets/images/슬라이드27.JPG">
+  <img src="/assets/images/슬라이드28.JPG">    
 </figure>
 
 {% include gallery caption="데이터 분석 프로젝트" %}
