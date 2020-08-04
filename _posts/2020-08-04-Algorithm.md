@@ -87,7 +87,7 @@ https://programmers.co.kr/learn/courses/30/lessons/12912
 ```python
 def solution(a, b):
     return sum(range(min(a,b), max(a,b) + 1))
-'''
+```
 
 
 
@@ -102,7 +102,7 @@ def solution(a, b):
     week = ['MON','TUE','WED','THU','FRI','SAT','SUN']
     day = datetime(year = 2016, month = a, day =b)
     return week[day.weekday()]
-'''
+```
 
 
 # 같은 숫자는 싫어 
@@ -118,7 +118,7 @@ def solution(arr):
             answer.append(arr[i])
     
     return answer
-'''
+```
 
 ```python
 def no_continuous(s):
