@@ -206,6 +206,8 @@ https://programmers.co.kr/learn/courses/30/lessons/12918
 
 {% endcapture %}
 
+<div class="notice">{{ notice-2 | markdownify }}</div>
+
 ```python
 def solution(s):
     if len(s) in (4, 6):
