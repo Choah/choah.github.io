@@ -194,6 +194,7 @@ def solution(s):
 
 https://programmers.co.kr/learn/courses/30/lessons/12918
 
+{% capture notice-2 %}
 #### [정규식]
 - \d: 숫자
 - \D: 숫자가 아닌 것
@@ -201,6 +202,7 @@ https://programmers.co.kr/learn/courses/30/lessons/12918
 - \S: whitespace가 아닌 것
 - \w: 문자 + 숫자와 매치
 - \W: 문자 + 숫자가 아닌 것 
+{% endcapture %}
 
 ```python
 def solution(s):
