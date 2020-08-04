@@ -143,7 +143,7 @@ def solution(s):
             return False
 
     return True
-'''
+```
 
 # 문자열 내 맘대로 정렬하기
 
@@ -152,7 +152,7 @@ https://programmers.co.kr/learn/courses/30/lessons/12915
 ```python
 def solution(strings, n):
     return sorted(strings, key = lambda x : (x[n], x))
-'''
+```
 
 
 # 나누어 떨어지는 숫자 배열
@@ -162,18 +162,179 @@ https://programmers.co.kr/learn/courses/30/lessons/12910
 ```python
 def solution(arr, divisor):
     return sorted([i for i in arr if i % divisor == 0]) or [-1]
-'''
+```
 
 
 
-# 문자열 내 맘대로 정렬하기
+# 문자열 내 p와 y의 개수
 
-https://programmers.co.kr/learn/courses/30/lessons/12915
+https://programmers.co.kr/learn/courses/30/lessons/12916
 
 ```python
-def solution(strings, n):
-    return sorted(strings, key = lambda x : (x[n], x))
-'''
+def solution(s):
+    if s.lower().count('p') == s.lower().count('y'):
+        return True
+    else:
+        return False
+```
+
+
+# 문자열 내림차순으로 배치하기
+
+https://programmers.co.kr/learn/courses/30/lessons/12917
+
+```python
+def solution(s):
+    return ''.join(sorted(s, reverse=True))
+```
+
+
+
+# 문자열 다루기 기본
+
+https://programmers.co.kr/learn/courses/30/lessons/12918
+
+#### [정규식]
+- \d: 숫자
+- \D: 숫자가 아닌 것
+- \s: whitespace (\t,\n,\r,\f,\v)
+- \S: whitespace가 아닌 것
+- \w: 문자 + 숫자와 매치
+- \W: 문자 + 숫자가 아닌 것 
+
+```python
+def solution(s):
+    if len(s) in (4, 6):
+        try: 
+            int(s)
+            return True
+        except:
+            return False
+    else:
+        return False
+```
+
+
+# 서울에서 김서방 찾기
+
+https://programmers.co.kr/learn/courses/30/lessons/12919
+
+```python
+def solution(seoul):
+    for i,j in enumerate(seoul):
+        if j == 'Kim':
+            return "김서방은 {}에 있다".format(i)
+```
+
+```python
+def findKim(seoul):
+    return "김서방은 {}에 있다".format(seoul.index('Kim'))
+```
+
+
+# 소수찾기
+
+https://programmers.co.kr/learn/courses/30/lessons/12921
+
+- 에라토스테네스의 체
+
+```python
+def solution(n):
+    a = [False, False] + [True]*(n-1)
+    answer = []
+    for i in range(2,n+1):
+        if a[i]:
+            answer.append(i)
+            for j in range(2*i, n+1, i):
+                a[j] = False
+    return len(answer)
+```
+
+```python
+def solution(n):
+    num=set(range(2,n+1))
+
+    for i in range(2,n+1):
+        if i in num:
+            num-=set(range(2*i,n+1,i))
+    return len(num)
+```
+
+
+# 수박수박수
+
+https://programmers.co.kr/learn/courses/30/lessons/12922
+
+```python
+def solution(n):
+    b = '수박'*n
+    answer = ''
+    for i in range(n):
+        answer = answer + b[i]
+    return answer
+```
+
+```python
+def water_melon(n):
+    s = "수박" * n
+    return s[:n]
+```
+
+
+# 시저암호
+
+https://programmers.co.kr/learn/courses/30/lessons/12926
+
+```python
+def solution(s,n):
+    abc = 'abcdefghijklmnopqrstuvwxyz'
+    ABC = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    answer = ''
+    for i in s:
+        if i in abc:
+            index = abc.find(i)
+            index += n
+            answer = answer + abc[index%26]
+        elif i in ABC:
+            index = ABC.find(i)
+            index += n
+            answer = answer + ABC[index%26]
+        else:
+            answer = answer + ' '
+    return answer
+```
+
+```python
+def caesar(s, n):
+    s = list(s)
+    for i in range(len(s)):
+        if s[i].isupper():
+            s[i]=chr((ord(s[i])-ord('A')+ n)%26+ord('A'))
+        elif s[i].islower():
+            s[i]=chr((ord(s[i])-ord('a')+ n)%26+ord('a'))
+
+    return "".join(s)
+```
+
+
+# 약수의 합
+
+https://programmers.co.kr/learn/courses/30/lessons/12928
+
+```python
+def solution(n):
+    answer = 0
+    for i in range(1,n+1):
+        if n % i == 0:
+            answer += i
+    return answer
+```
+
+```python
+def sumDivisor(num):
+    # num / 2 의 수들만 검사하면 성능 약 2배 향상된다.
+    return num + sum([i for i in range(1, (num // 2) + 1) if num % i == 0])
+```
 
 
 {% include gallery id="gallery" caption="flowers" %}
