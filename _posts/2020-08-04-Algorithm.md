@@ -342,6 +342,81 @@ def sumDivisor(num):
     return num + sum([i for i in range(1, (num // 2) + 1) if num % i == 0])
 ```
 
+# 이상한 문자 만들기
+
+https://programmers.co.kr/learn/courses/30/lessons/12930
+
+```python
+def solution(a):
+    lst = a.split(' ')
+    answer = []
+    for i in lst:
+        v = list(i)
+        for z,x in enumerate(v):
+            if z % 2 == 0:
+                v[z] = x.upper()
+            else:
+                v[z] = x.lower()
+        answer.append(''.join(v))
+    return ' '.join(answer)
+```
+
+```python
+def toWeird(s):
+    return " ".join(map(lambda x: "".join([a.lower() if i % 2 else a.upper() for i, a in enumerate(x)]), s.split(" ")))
+```
+
+# 자릿수 더하기
+
+https://programmers.co.kr/learn/courses/30/lessons/12931
+
+```python
+import timeit
+
+def solution(n):
+    start = timeit.default_timer()
+    answer = 0
+    for i in str(n):
+        answer += int(i)
+    stop = timeit.default_timer()
+    return answer,  stop-start
+    
+solution(12)
+'''
+(3, 3.200000264769187e-06)
+'''
+```
+
+```python
+def solution(n):
+    start = timeit.default_timer()
+    answer = 0
+    
+    while n > 0:
+        answer += n % 10
+        n  = n // 10
+    stop = timeit.default_timer()
+    return answer, stop-start
+    
+solution(12)
+'''
+(3, 1.600000359758269e-06)
+'''
+
+```python
+# 재귀구조
+def sum_digit(number):
+    start = timeit.default_timer()
+    if number < 10:
+        return number;
+    a = (number % 10) + sum_digit(number // 10) 
+    stop = timeit.default_timer()
+    return a , stop-start
+    
+sum_digit(12)
+'''
+(3, 2.100000074278796e-06)
+'''
 
 {% include gallery id="gallery" caption="flowers" %}
 
