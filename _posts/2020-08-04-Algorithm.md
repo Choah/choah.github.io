@@ -402,6 +402,7 @@ solution(12)
 '''
 (3, 1.600000359758269e-06)
 '''
+```
 
 ```python
 # 재귀구조
@@ -417,6 +418,7 @@ sum_digit(12)
 '''
 (3, 2.100000074278796e-06)
 '''
+```
 
 {% include gallery id="gallery" caption="flowers" %}
 
