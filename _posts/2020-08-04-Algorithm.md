@@ -420,6 +420,110 @@ sum_digit(12)
 '''
 ```
 
+
+# 자연수 뒤집어 배열로 만들기
+
+https://programmers.co.kr/learn/courses/30/lessons/12932
+
+```python
+def solution(n):
+    start = timeit.default_timer()
+    a = list(map(lambda x: int(x), str(n)))[::-1]
+    stop = timeit.default_timer()
+    return stop-start
+    
+solution(123)
+'''
+6.800000846851617e-06
+'''
+```
+
+```python
+# reversed를 쓰는게 lambda보다 더 빠른 걸로.
+def digit_reverse(n):
+    start = timeit.default_timer()
+    a = list(map(int, reversed(str(n))))
+    stop = timeit.default_timer()
+    return stop-start
+    
+digit_reverse(123)
+'''
+5.399999281507917e-06
+'''
+```
+
+# 체육복
+
+https://programmers.co.kr/learn/courses/30/lessons/42862
+
+```python
+def solution(n,lost,reserve):
+    
+    set_reserve = set(reserve) - set(lost)
+    set_lost = set(lost) - set(reserve)
+    
+    for i in set_reserve:
+        if i-1 in set_lost:
+            set_lost.remove(i-1)
+        elif i+1 in set_lost:
+            set_lost.remove(i+1)
+    return n-len(set_lost)
+```
+
+```python
+def solution(n, lost, reserve):
+    
+    # 없는 학생 제외
+    students = [1 if i+1 not in lost else 0 for i in range(n)]
+    # 여벌있는 학생 포함
+    students = [num+1 if index+1 in reserve else num for index, num in enumerate(students)]    
+    
+    for i in range(0, len(students) - 1):
+        if students[i] == 0 and students[i+1] == 2:
+            students[i] = 1
+            students[i+1] -= 1
+        elif students[i] == 2 and students[i+1] == 0:
+            students[i] = 1
+            students[i+1] = 1
+    return sum([1 for i in students if i != 0])
+```
+
+
+# 정수 내림차순으로
+
+https://programmers.co.kr/learn/courses/30/lessons/12933
+
+```python
+def solution(n):
+    n = sorted(list(str(n)))[::-1]
+    return int(''.join(n))
+```
+
+```python
+def solution(n):
+    answer = ''
+    lst = []
+
+    while n > 0:
+        r = n % 10
+        n = n // 10
+        lst.append(r)
+
+    lst.sort()
+    lst.reverse()
+
+    for j in range(0, len(lst)):
+        answer += str(lst[j])
+
+    return int(answer)
+```
+
+
+
+
+
+
+
 {% include gallery id="gallery" caption="flowers" %}
 
 
